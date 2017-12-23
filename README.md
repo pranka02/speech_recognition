@@ -13,8 +13,14 @@ The dataset used in this project is the Speech Commands Dataset by TensorFlow. T
 Short Time Fourier Transform was performed on the .wav audio clips and the coefficients were used as the features.
 
 ---------------------------
+## Preprocessing
+
+
+
+---------------------------
 ## Learning Models
 
-Deep Neural Network --A 3 layer deep neural network in python was implemented to do the classification.
+Deep Neural Network 
+A 3 layer deep neural network in python was implemented to do the classification.
 
 
