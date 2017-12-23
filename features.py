@@ -28,8 +28,6 @@ with open(csv_file, "w", newline= '') as output:
 			mfcc = np.array(np.mean(librosa.feature.mfcc(y=X, sr=samp_rate, n_mfcc=40).T,axis=0))
 			chroma = np.array(np.mean(librosa.feature.chroma_stft(S=stft, sr=samp_rate).T,axis=0))
 			contrast = np.array(np.mean(librosa.feature.spectral_contrast(S=stft, sr=samp_rate).T,axis=0))
-			stftm = np.array(np.mean(stft.T,axis=0))
-			features.append(stftm)
 			features.append(mfcc)
 			features.append(chroma)
 			features.append(contrast)
