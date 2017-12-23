@@ -35,7 +35,7 @@ kNN was used to fit the data with the default parameters.
 Score - 0.65
 
 ## Conclusion
-The result obtained is not the best but is in the top 600 resulst obtained by other competitors in Kaggle. 
+The result obtained is not the best but is in the top 600 results obtained by other competitors in Kaggle. 
 
 I attribute this to the fact that the audio clips with background noise need more processing before their features should be extracted.
 Also, the words that are classfied as 'unknown' are not similar to each other but are similar to the other classes of words.
