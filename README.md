@@ -10,7 +10,7 @@ The dataset used in this project is the Speech Commands Dataset by TensorFlow. T
 ---------------------------
 ## Features
 
-Short Time Fourier Transform (STFT) was performed on the .wav audio clips and the coefficients were used as the features. Mel-Frequency Cepstral Coefficients (MFCC), Chroma and Contrast features were also used as features.
+Mel-Frequency Cepstral Coefficients (MFCC), Chroma and Contrast features were extracted and used as features.
 
 ---------------------------
 ## Preprocessing
@@ -22,5 +22,17 @@ The features were normalized and PCA was performed on them to reduce dimension.
 
 ### Deep Neural Network 
 A 3 layer deep neural network was implemented in TensorFlow to do the classification. 
+After experimneting with a few combinations I chose the hidden layer units as 700, 700 and 100.
+The output of each hidden layer passes through a RELU activation. 
+Score - 0.63
+
+### Random Forest Ensemble
+A Random Forest model was fit with the default parameters.
+Score - 0.64
+
+### K Nearest Neighbor 
+kNN was used to fit the data with the default parameters.
+Score - 0.65
+
 
 
