@@ -38,7 +38,7 @@ Score - 0.65
 The result obtained is not the best but is in the top 600 results obtained by other competitors in Kaggle. 
 
 I attribute this to the fact that the audio clips with background noise need more processing before their features should be extracted.
-Also, the words that are classfied as 'unknown' are not similar to each other but are similar to the other classes of words.
+Also, the words that are classified as 'unknown' are not similar to each other but are similar to the other classes of words.
 
 
 
