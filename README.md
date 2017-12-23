@@ -21,6 +21,6 @@ The features were normalized and PCA was performed on them to reduce dimension.
 ## Learning Models
 
 ### Deep Neural Network 
-A 3 layer deep neural network in python was implemented to do the classification.
+A 3 layer deep neural network was implemented in TensorFlow to do the classification. 
 
 
