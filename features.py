@@ -23,6 +23,7 @@ with open(csv_file, "w", newline= '') as output:
 		files = os.listdir(audio_class_folder)
 		print(folder)
 		for file in files:
+			features = []
 			X, samp_rate = librosa.load(os.path.join(audio_class_folder,file))
 			stft = np.array(np.abs(librosa.stft(X)))
 			mfcc = np.array(np.mean(librosa.feature.mfcc(y=X, sr=samp_rate, n_mfcc=40).T,axis=0))
