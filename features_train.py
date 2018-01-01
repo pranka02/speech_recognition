@@ -1,5 +1,4 @@
 import librosa
-import librosa.display
 from librosa import feature as ft
 import matplotlib.pyplot as plt
 import os 
@@ -15,7 +14,6 @@ train_path = r'train_full'
 csv_file = os.path.join(train_path,'features_full.csv')
 folders = os.listdir(path_name)
 print(folders)
-features = []
 
 with open(csv_file, "w", newline= '') as output:
 	for folder in folders:
@@ -23,17 +21,15 @@ with open(csv_file, "w", newline= '') as output:
 		files = os.listdir(audio_class_folder)
 		print(folder)
 		for file in files:
-			features = []
-			print(file)
 			X, samp_rate = librosa.load(os.path.join(audio_class_folder,file))
 			stft = np.array(np.abs(librosa.stft(X)))
 			mfcc = np.array(np.mean(librosa.feature.mfcc(y=X, sr=samp_rate, n_mfcc=40).T,axis=0))
 			chroma = np.array(np.mean(librosa.feature.chroma_stft(S=stft, sr=samp_rate).T,axis=0))
 			contrast = np.array(np.mean(librosa.feature.spectral_contrast(S=stft, sr=samp_rate).T,axis=0))
-			features.append(mfcc)
-			features.append(chroma)
-			features.append(contrast)
-			features.append(folder)
+			features = np.append(mfcc,chroma)
+			features = np.append(features,contrast)
+			features_full = features.tolist()
+			features_full.append(folder)
 			writer = csv.writer(output, delimiter=',')
-			writer.writerow(features)
+			writer.writerow(features_full)
 print('Yay!')
