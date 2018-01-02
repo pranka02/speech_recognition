@@ -13,7 +13,6 @@ direc_name = os.path.join(root,path_name)
 train_path = r'test/audio'
 csv_file = os.path.join(direc_name,'features_test.csv')
 folders = os.listdir(path_name)
-features = []
 
 with open(csv_file, "w", newline= '') as output:
 	audio_class_folder = os.path.join(root,train_path)
