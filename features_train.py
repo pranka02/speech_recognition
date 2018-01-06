@@ -7,7 +7,7 @@ import csv
 import ntpath
 
 # root path
-root = os.path.dirname(os.path.realpath(__file__))
+root = os.path.dirname(os.path.realpath('__file__'))
 path_name = r'train_full\audio'
 direc_name = os.path.join(root,path_name)
 train_path = r'train_full'
