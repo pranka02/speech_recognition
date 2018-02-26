@@ -1,6 +1,6 @@
 # Speech Recognition
 
-This project aims to do the first step towards building a simple speech detector using Speech Commands Dataset relased by TensorFlow.
+This project aims to do the first step towards building a simple speech detector using Speech Commands Dataset released by TensorFlow.
 
 ---------------------------
 ## Dataset
