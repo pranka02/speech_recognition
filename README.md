@@ -22,7 +22,7 @@ The features were normalized and PCA was performed on them to reduce dimension.
 
 ### Deep Neural Network 
 A 3 layer deep neural network was implemented in TensorFlow to do the classification. 
-After experimneting with a few combinations I chose the hidden layer units as 700, 700 and 100.
+After experimenting with a few combinations I chose the hidden layer units as 700, 700 and 100.
 The output of each hidden layer passes through a RELU activation. 
 Score - 0.63
 
