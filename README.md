@@ -1,3 +1,4 @@
+![alt text](https://github.com/pranka02/speech_recognition/blob/master/Log%20Spectrogram.JPG)
 # Speech Recognition
 
 This project aims to do the first step towards building a simple speech detector using Speech Commands Dataset released by TensorFlow.
